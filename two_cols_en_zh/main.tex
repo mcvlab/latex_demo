@@ -1,0 +1,134 @@
+% 来源： https://zhuanlan.zhihu.com/p/530865615
+
+
+\documentclass[twocolumn]{ctexart}
+\CTEXsetup[format={\Large\bfseries}]{section}%让section指令左对齐
+\renewcommand{\abstractname}{}%去掉摘要头上的标题
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}%右上角引用文献的命令
+\usepackage[margin=2cm]{geometry}%调整页边距
+\usepackage{pifont}%提供圆圈数字输入
+\usepackage{graphicx}%插入图片
+\usepackage{authblk}%作者、单位
+\usepackage{amsmath, bm}%数学公式宏包
+\usepackage{esint}%使重积分符号更加紧凑，必须加在amsmath后
+\usepackage{amssymb}%特殊数学符号
+\usepackage{caption}%图片标题处理
+\usepackage{float}%处理图表浮动插入
+\usepackage[section]{placeins}%防止图表浮动跨过section
+\usepackage{subfigure}%插入多图时用子图显示的宏包
+\pagestyle{plain}%页码
+\setCJKfamilyfont{zhsong}[AutoFakeBold = {2.17}]{SimSun}
+% \setCJKmainfont{SimSun}[BoldFont=FandolSong-Bold]
+\renewcommand*{\songti}{\CJKfamily{zhsong}}%定义新宋体命令
+\setlength{\belowcaptionskip}{-2pt}
+\begin{document}
+
+	\zihao{5}%设置全文字号为五号
+	\everymath{\displaystyle}%设置所有数学公式为displaystyle形式
+	\abovedisplayshortskip=5pt%设置数学公式间距
+	\belowdisplayshortskip=5pt
+	\abovedisplayskip=5pt
+	\belowdisplayskip=5pt
+	\lineskiplimit=4pt
+	\lineskip=4pt
+	\title{\vspace{-2cm}{\heiti {\zihao{2}论文标题}} }%标题
+	\date{}%不显示日期
+	\author[1]{\zihao{-4}作者1 , 作者2 , 作者3\vspace{-1.5em}}%作者名称
+	\affil[1]{\vspace{-6em}{{\zihao{6}{\kaishu (单位)}}}}%作者单位
+	\twocolumn[
+	\begin{@twocolumnfalse}
+		\maketitle 
+		\begin{abstract}
+			\newgeometry{left=1.5cm, right=1.5cm}%调整摘要部分的页边距，与正文对齐
+			\noindent{\zihao{-5}{\heiti 摘~~~要 }{\kaishu abstract is here。}}\\
+			\noindent{\zihao{-5}\heiti 关键词 }~~~{\zihao{-5}\kaishu 关键词1~~~~关键词2~~~~关键词3}\\
+			\\
+		\end{abstract}
+	\end{@twocolumnfalse}
+	]%双栏环境下单栏的摘要
+
+	\section{引言}
+
+	introduction is here.
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	\section{相关工作}
+
+	related work is here.
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	\section{方法}
+
+	method is here.
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	\section{实验}
+
+	experiments are here.
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	\section{结论}
+
+	conclusions are here.
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+
+	paragraph
+	
+	%如果你会用BibTeX,请使用生成参考文献列表的命令
+	%\bibliographystyle{unsrt}
+	%\bibliography{ref} 
+	
+\end{document}	
