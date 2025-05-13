@@ -16,6 +16,7 @@
 \usepackage{float}%处理图表浮动插入
 \usepackage[section]{placeins}%防止图表浮动跨过section
 \usepackage{subfigure}%插入多图时用子图显示的宏包
+% \usepackage{datetime} % 加入datetime包用于英文版日期
 \pagestyle{plain}%页码
 \setCJKfamilyfont{zhsong}[AutoFakeBold = {2.17}]{SimSun}
 % \setCJKmainfont{SimSun}[BoldFont=FandolSong-Bold]
@@ -32,9 +33,9 @@
 	\lineskiplimit=4pt
 	\lineskip=4pt
 	\title{\vspace{-2cm}{\heiti {\zihao{2}论文标题}} }%标题
-	\date{}%不显示日期
-	\author[1]{\zihao{-4}作者1 , 作者2 , 作者3\vspace{-1em}}%作者名称
-	\affil[1]{\vspace{-3em}{{\zihao{6}{\kaishu (单位)}}}}%作者单位
+	\date{\today}
+	\author[1]{\zihao{-4}作者1\vspace{-1em}}%作者名称
+	% \affil[1]{\vspace{-3em}{{\zihao{6}{\kaishu (单位)}}}}%作者单位
 
 	\maketitle 
 	\begin{abstract}
